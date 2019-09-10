@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Aapp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body onload="weatherApp()">
+    <nav class="main-nav" href="#">
+        <a>
+            <img src="image/logo.png" class="weather-logo" width="50px" height="50px" class="d-inline-block align-top"  alt="image">
+            Up Date Weather
+        </a>
+        <a class="github-logo">
+            <i class="fab fa-github" style="font-size: 50px;"></i>
+        </a>
+    </nav>
+
+    <div class="header">
+        <h1>My First Weather App</h1>
+    </div>
+    <section class="main-section">
+        <div class="input">
+            <input type="text" placeholder="Find Weather"class="search-weather" id="up-date-weather" aria-label="Enter Find Weather" aria-describedby="basic-addon2">
+            <div>
+                <span class="degree" id="span" id="basic-addon2" onclick="getWeather()"> <i class="fas fa-search"></i> </span>
+            </div>
+        </div>
+
+        <div id="weather-info">
+            <h2 class="city-name"></h2>
+            <h3 class="degree"><span></span>°c</h3>
+            <p id="weather-icons"></p>
+            <p class="weather-description"></p>
+            <p class="temp-range" ><span class="min"></span>°c /  <span class="max"></span>°c</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
